@@ -4,7 +4,7 @@
 Analyzed US retail transaction data to identify revenue drivers, profitability issues, and actionable business recommendations across categories, regions, discount strategy, customer segments, and shipping preferences.
 
 ## Tools Used
-SQL (MySQL)
+SQL (MySQL), Python (Pandas)
 
 ## Dataset Overview
 - **Scope:** Retail transactions across the United States
@@ -43,4 +43,5 @@ Standard Class is the most used shipping option (15 orders), with First Class cl
 Initial analysis used arbitrary thresholds for categorizing customer segments and ship modes (e.g., a fixed profit cutoff, and total quantity rather than order count). These were corrected after reviewing the actual data distribution — segment value buckets were re-set based on real average-profit gaps between segments, and "most used" shipping mode was redefined using order count instead of item quantity, since the two metrics led to different conclusions.
 
 ## Files
-- `sql/analysis_queries.sql` — all 6 analysis queries
+- `sql/analysis_queries.sql` — all 6 analysis queries (SQL)
+- `python/eda_analysis.ipynb` — same 6 analyses replicated in Python (Pandas)
